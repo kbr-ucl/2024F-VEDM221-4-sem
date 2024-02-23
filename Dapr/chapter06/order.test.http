@@ -1,3 +1,5 @@
+###
+## Run tests in Visual Studio Code with Rest Client extension
 @baseUrl = localhost
 @orderservicePort = 5001
 @orderserviceDaprPort = 5010
@@ -9,7 +11,7 @@ content-type: application/json
 
 {
   "CustomerCode": "Davide",
-  "Date": "{{$datetime 'yyyy-MM-dd'}}",
+  "Date": "{{$datetime 'YYYY-MM-DD'}}",
   "Items": [
     {
       "ProductCode": "rockiecookie",
@@ -38,7 +40,7 @@ content-type: application/json
 
 {
   "CustomerCode": "Davide",
-  "Date": "{{$datetime 'yyyy-MM-dd'}}",
+  "Date": "{{$datetime 'YYYY-MM-DD'}}",
   "Items": [
     {
       "ProductCode": "rockiecookie",
@@ -73,7 +75,7 @@ content-type: application/json
   ]
 }
 ###
-@orderId = dab842ed-53a5-4a8e-b5c8-53213b62e993 //{{erraticOrderRequest.response.body.$}}
+@orderId = {{erraticOrderRequest.response.body.$}}
 # get order from ASP.NET endpoint
 GET http://{{baseUrl}}:{{orderservicePort}}/order/{{orderId}}
 ###
