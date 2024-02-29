@@ -34,6 +34,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", 
 		components\shipping-cosmos.yaml = components\shipping-cosmos.yaml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6ED232DC-B7AE-4DFE-ABAF-0D14C3EAAF72}"
+	ProjectSection(SolutionItems) = preProject
+		cleandaprd.ps1 = cleandaprd.ps1
+		launch.ps1 = launch.ps1
+		loopactor.ps1 = loopactor.ps1
+		order.test.http = order.test.http
+		reservationactor.http = reservationactor.http
+		tye.yaml = tye.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
