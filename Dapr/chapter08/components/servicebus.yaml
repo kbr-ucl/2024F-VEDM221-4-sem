@@ -4,12 +4,18 @@ metadata:
   name: commonpubsub
   namespace: default
 spec:
-  type: pubsub.azure.servicebus
+  type: pubsub.rabbitmq
   version: v1
   metadata:
-  - name: connectionString
-    value: # Replace
-  - name: lockDurationInSec
-    value: 60
-  - name: lockRenewalInSec
-    value: 30
+  - name: host
+    value: "amqp://localhost:5672"
+  - name: durable
+    value: "false"
+  - name: deletedWhenUnused
+    value: "false"
+  - name: autoAck
+    value: "false"
+  - name: reconnectWait
+    value: "0"
+  - name: concurrency
+    value: parallel

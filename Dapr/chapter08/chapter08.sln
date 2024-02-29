@@ -1,7 +1,6 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34607.79
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample.microservice.shipping", "sample.microservice.shipping\sample.microservice.shipping.csproj", "{C02E3FFA-EFC3-4040-B93C-99C29E423171}"
 EndProject
@@ -25,6 +24,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample.microservice.reserva
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sample.microservice.order", "sample.microservice.order\sample.microservice.order.csproj", "{6B6A2B2F-973F-4625-B705-B4EBA7FD59EA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Components", "Components", "{1BCB3AEA-4EC7-4D5A-986C-67A379B9E748}"
+	ProjectSection(SolutionItems) = preProject
+		components\customization-cosmos.yaml = components\customization-cosmos.yaml
+		components\order-cosmos.yaml = components\order-cosmos.yaml
+		components\reservation-cosmos.yaml = components\reservation-cosmos.yaml
+		components\reservationitem-cosmos.yaml = components\reservationitem-cosmos.yaml
+		components\servicebus.yaml = components\servicebus.yaml
+		components\shipping-cosmos.yaml = components\shipping-cosmos.yaml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +42,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C02E3FFA-EFC3-4040-B93C-99C29E423171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -170,5 +176,11 @@ Global
 		{6B6A2B2F-973F-4625-B705-B4EBA7FD59EA}.Release|x64.Build.0 = Release|Any CPU
 		{6B6A2B2F-973F-4625-B705-B4EBA7FD59EA}.Release|x86.ActiveCfg = Release|Any CPU
 		{6B6A2B2F-973F-4625-B705-B4EBA7FD59EA}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DFC7234-EBEA-4F50-A6B8-58602AFDD8C2}
 	EndGlobalSection
 EndGlobal
